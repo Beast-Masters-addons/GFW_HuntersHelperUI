@@ -52,7 +52,7 @@ function FHH_UIOnEvent(self)
 	
 		local viewBy = FHH_UIViewByZone and FHH_UI_VIEW_BY_ZONE or FHH_UI_VIEW_BY_ABILITY;
 		UIDropDownMenu_SetSelectedValue(FHH_UIViewByDropDown, viewBy, 1);
-		UIDropDownMenu_SetText(viewBy, FHH_UIViewByDropDown);
+		UIDropDownMenu_SetText(FHH_UIViewByDropDown, viewBy);
 		
 		self:UnregisterEvent("ADDON_LOADED");
 
